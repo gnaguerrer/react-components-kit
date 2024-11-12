@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, ViewStyle } from "react-native";
+import { View, StyleSheet } from "react-native";
 import { IStack } from "./types";
 
 export const Stack = (props: IStack) => {
@@ -12,12 +12,23 @@ export const Stack = (props: IStack) => {
     background,
     alignItems,
     justifyContent,
+    alignSelf,
+    padding,
     paddingHorizontal,
     paddingVertical,
     paddingBottom,
     paddingTop,
+    paddingLeft,
+    paddingRight,
+    margin,
+    marginHorizontal,
+    marginVertical,
+    marginBottom,
+    marginTop,
+    borderRadius,
     overflow,
     rowLayout,
+    centered,
     wfull,
     children,
     style,
@@ -34,11 +45,21 @@ export const Stack = (props: IStack) => {
       backgroundColor: background,
       alignItems,
       justifyContent,
+      alignSelf,
+      padding,
       paddingHorizontal,
       paddingVertical,
       paddingBottom,
       paddingTop,
+      paddingLeft,
+      paddingRight,
+      margin,
+      marginHorizontal,
+      marginVertical,
+      marginBottom,
+      marginTop,
       overflow,
+      borderRadius,
     },
     rowLayout && { flexDirection: "row", alignItems: "center" },
     wfull && {
