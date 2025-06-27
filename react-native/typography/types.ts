@@ -1,4 +1,4 @@
-import { TextProps, TextStyle } from "react-native";
+import { TextProps, TextStyle, DimensionValue } from "react-native";
 
 export interface ITypography extends TextProps {
   size?: "sm" | "md" | "lg";
@@ -6,9 +6,21 @@ export interface ITypography extends TextProps {
   style?: TextStyle;
   children: React.ReactNode;
   color?: string;
-  paddingBottom?: number;
-  paddingTop?: number;
   align?: "left" | "center" | "right";
   lineHeight?: number;
   underline?: boolean;
+  padding?: DimensionValue;
+  paddingHorizontal?: DimensionValue;
+  paddingVertical?: DimensionValue;
+  paddingBottom?: DimensionValue;
+  paddingTop?: DimensionValue;
+  paddingLeft?: DimensionValue;
+  paddingRight?: DimensionValue;
+  margin?: DimensionValue;
+  marginHorizontal?: DimensionValue;
+  marginVertical?: DimensionValue;
+  marginBottom?: DimensionValue;
+  marginTop?: DimensionValue;
+  marginLeft?: DimensionValue;
+  marginRight?: DimensionValue;
 }

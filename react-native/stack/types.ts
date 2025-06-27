@@ -8,12 +8,12 @@ import type {
 } from "react-native";
 
 export interface IStack extends ViewProps {
-  spacing?: Number | string;
-  direction?: FlexStyle["flexDirection"];
+  gap?: number | string;
+  flexDirection?: FlexStyle["flexDirection"];
   flexWrap?: FlexStyle["flexWrap"];
   flex?: FlexStyle["flex"];
   flexGrow?: FlexStyle["flexGrow"];
-  background?: ColorValue;
+  backgroundColor?: ColorValue;
   alignItems?: FlexAlignType;
   justifyContent?: FlexStyle["justifyContent"];
   alignSelf?: FlexStyle["alignSelf"];
@@ -29,9 +29,18 @@ export interface IStack extends ViewProps {
   marginVertical?: DimensionValue;
   marginBottom?: DimensionValue;
   marginTop?: DimensionValue;
+  marginLeft?: DimensionValue;
+  marginRight?: DimensionValue;
   borderRadius?: AnimatableNumericValue | string;
   overflow?: "visible" | "hidden";
+  rowGap?: number | string;
   rowLayout?: boolean;
   centered?: boolean;
   wfull?: boolean;
+  rounded?: boolean;
+  position?: FlexStyle["position"];
+  width?: DimensionValue;
+  height?: DimensionValue;
+  borderWidth?: number;
+  borderColor?: ColorValue;
 }
